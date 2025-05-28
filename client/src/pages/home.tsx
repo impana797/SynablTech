@@ -10,15 +10,16 @@ export default function Home() {
       <SEOHead />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center gradient-bg tech-pattern overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <section className="relative min-h-screen flex items-center gradient-bg overflow-hidden">
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-white animate-slide-up">
-              <h1 className="font-bold text-5xl lg:text-7xl leading-tight mb-6">
+              <h1 className="font-bold text-5xl lg:text-7xl leading-tight mb-6 drop-shadow-lg">
                 Intelligence
                 <span className="text-emerald-400 block">Synergized</span>
               </h1>
-              <p className="text-xl lg:text-2xl text-blue-100 mb-8 leading-relaxed">
+              <p className="text-xl lg:text-2xl text-white mb-8 leading-relaxed font-medium drop-shadow-md">
                 Transform your business with cutting-edge AI and data consulting. 
                 We turn complex data into actionable insights that drive growth.
               </p>
