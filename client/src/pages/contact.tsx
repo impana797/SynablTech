@@ -207,8 +207,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-slate-900 mb-2">Email Us</h3>
-                    <p className="text-slate-600">hello@synabl.com</p>
-                    <p className="text-slate-600">partnerships@synabl.com</p>
+                    <p className="text-slate-600">info@synabl.com</p>
+                   
                   </div>
                 </div>
                 
@@ -219,7 +219,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold text-lg text-slate-900 mb-2">Call Us</h3>
                     <p className="text-slate-600">+1 (555) 123-4567</p>
-                    <p className="text-slate-500 text-sm">Mon-Fri 9AM-6PM EST</p>
+                  
                   </div>
                 </div>
                 
@@ -229,7 +229,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg text-slate-900 mb-2">Visit Us</h3>
-                    <p className="text-slate-600">123 Innovation Drive<br />Tech District, SF 94107</p>
+                    <p className="text-slate-600">No2, 1st cross,new income tax layout,<br/>chandra layout,Bangalore 560072</p>
                   </div>
                 </div>
               </div>

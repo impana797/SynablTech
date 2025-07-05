@@ -1,8 +1,10 @@
+// Portions of code created with the assistance of AI
+import fileLogo from "@/components/file.svg";
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Brain } from "lucide-react";
+import { Menu } from "lucide-react";
 
 export function Navigation() {
   const [location] = useLocation();
@@ -28,12 +30,18 @@ export function Navigation() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center space-x-3 cursor-pointer">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-emerald-500 rounded-lg flex items-center justify-center">
-                <Brain className="text-white text-lg" />
+              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-emerald-500 rounded-lg flex items-center justify-center overflow-hidden">
+                <img
+                  src={fileLogo}
+                  alt="Synabl Logo"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div>
                 <h1 className="font-bold text-xl text-navy">Synabl</h1>
-                <p className="text-xs text-slate-500 -mt-1">Intelligence Synergized</p>
+                <p className="text-xs text-slate-500 -mt-1">
+                  Intelligence Synergized
+                </p>
               </div>
             </div>
           </Link>

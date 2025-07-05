@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { Brain, Linkedin, Twitter, Github } from "lucide-react";
+import { Linkedin, Twitter, Github } from "lucide-react";
+import fileLogo from "@/components/file.svg";
 
 export function Footer() {
   return (
@@ -9,10 +10,15 @@ export function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-emerald-500 rounded-lg flex items-center justify-center">
-                <Brain className="text-white text-xl" />
+              <div className="h-14 flex items-center justify-center overflow-hidden">
+                <img
+                  src={fileLogo}
+                  alt="Synabl Logo"
+                  className="h-full object-contain"
+                  style={{ display: 'block' }}
+                />
               </div>
-              <div>
+              <div className="flex flex-col justify-center">
                 <h3 className="font-bold text-2xl">Synabl</h3>
                 <p className="text-blue-200 text-sm">Intelligence Synergized</p>
               </div>

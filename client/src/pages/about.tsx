@@ -1,6 +1,8 @@
+// Portions of code created with the assistance of AI
 import { SEOHead } from "@/components/seo-head";
 import { Card, CardContent } from "@/components/ui/card";
 import { Lightbulb, Target, Heart, User } from "lucide-react";
+import img1 from "@/components/img1.png";
 
 export default function About() {
   return (
@@ -65,7 +67,7 @@ export default function About() {
             
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                 src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
                 alt="Diverse team of professionals in modern office" 
                 className="rounded-2xl shadow-lg w-full" 
               />
@@ -84,40 +86,56 @@ export default function About() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 overflow-x-auto">
             {/* Team Member 1 */}
             <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
-                <div className="w-24 h-24 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <User className="text-white text-2xl" />
+                <div className="w-24 h-24 bg-gradient-to-r from-blue-600 to-blue-700 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                  <img 
+                    src={img1} 
+                    alt="Paul Kaunds"
+                    className="w-full h-full object-cover" 
+                  />
                 </div>
-                <h3 className="font-semibold text-xl text-slate-900 mb-2">Dr. Sarah Chen</h3>
-                <p className="text-emerald-600 font-medium mb-4">Chief AI Officer</p>
-                <p className="text-slate-600">15+ years in machine learning and AI research, former Google AI team member</p>
+                <h3 className="font-semibold text-xl text-slate-900 mb-2">Paul Kaunds</h3>
+                <p className="text-emerald-600 font-medium mb-4">Founder and CEO @AI/ML </p>
+                <p className="text-slate-600">Expert with a proven record in building global teams and driving successful ASIC/SoC projects.</p>
               </CardContent>
             </Card>
             
             {/* Team Member 2 */}
             <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
-                <div className="w-24 h-24 bg-gradient-to-r from-emerald-500 to-green-600 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <User className="text-white text-2xl" />
+                <div className="w-24 h-24 bg-gradient-to-r from-emerald-500 to-green-600 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                  <div className="w-full h-full flex items-center justify-center text-4xl text-white font-bold">KR</div>
                 </div>
-                <h3 className="font-semibold text-xl text-slate-900 mb-2">Michael Rodriguez</h3>
-                <p className="text-emerald-600 font-medium mb-4">Head of Data Science</p>
-                <p className="text-slate-600">Expert in predictive analytics and statistical modeling with Fortune 500 experience</p>
+                <h3 className="font-semibold text-xl text-slate-900 mb-2">Karthik R</h3>
+                <p className="text-emerald-600 font-medium mb-4">Data Lead</p>
+                <p className="text-slate-600">Expert in predictive analytics and AI modeling with Fortune 500 experience</p>
               </CardContent>
             </Card>
             
             {/* Team Member 3 */}
             <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
-                <div className="w-24 h-24 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <User className="text-white text-2xl" />
+                <div className="w-24 h-24 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                  <div className="w-full h-full flex items-center justify-center text-4xl text-white font-bold">LT</div>
                 </div>
                 <h3 className="font-semibold text-xl text-slate-900 mb-2">Lisa Thompson</h3>
-                <p className="text-emerald-600 font-medium mb-4">Strategy Director</p>
+                <p className="text-emerald-600 font-medium mb-4">Director, Business Development</p>
                 <p className="text-slate-600">Business transformation specialist with deep industry knowledge across sectors</p>
+              </CardContent>
+            </Card>
+
+            {/* Team Member 4 */}
+            <Card className="text-center shadow-lg hover:shadow-xl transition-shadow">
+              <CardContent className="p-8">
+                <div className="w-24 h-24 bg-gradient-to-r from-emerald-500 to-green-600 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden">
+                  <div className="w-full h-full flex items-center justify-center text-4xl text-white font-bold">HA</div>
+                </div>
+                <h3 className="font-semibold text-xl text-slate-900 mb-2">Hemanth A</h3>
+                <p className="text-emerald-600 font-medium mb-4">Decision Science</p>
+                <p className="text-slate-600">Specialist in predictive analytics and statistical modeling with extensive industry experience</p>
               </CardContent>
             </Card>
           </div>
